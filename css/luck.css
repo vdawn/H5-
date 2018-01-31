@@ -1,0 +1,93 @@
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.content img{
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+.black{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity:.8;
+    display: none;
+}
+.showtime {
+    position: absolute;
+    top:150px;
+    height: 100%;
+    width: 92%;
+    overflow: hidden;
+}
+.blessing {
+    position: absolute;
+    flex-direction: row;
+    height: 70px;
+    width:16.66%;
+}
+.blessing img {
+    height: 90%;
+    width:100%;
+    vertical-align: middle;
+}
+.blessing1 {
+    left:5px;
+}
+.blessing2 {
+    left:16.66%;
+}
+
+.blessing3 {
+    left: 33.33%;
+}
+
+.blessing4 {
+    left:50%;
+}
+
+.blessing5 {
+    left:66.66%;
+}
+
+.blessing6 {
+    left: 83.33%;
+}
+
+.blessing8 {
+    position: absolute;
+    left: 10%;
+    top:30%;
+    display:none;
+    text-align: center;
+}
+
+.blessing8 img {
+    height: 100%;
+    width: 100%;
+}
+
+.open{
+    animation:open 5s;
+}
+
+@keyframes open {
+    from {
+        height:0%;
+        width:0%;
+        top:30%;
+        left:50%;
+        opacity:0.3;
+    }
+    to {
+        height:60%;
+        width:80%;
+        top:10%;
+        left:10%;
+        opacity:1;
+    }
+}

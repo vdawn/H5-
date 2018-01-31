@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/surprise.css" />
+</head>
+
+<body>
+    <div class="content">
+        <!-- 弹出框/可长按保存的部分 -->
+        <div id="box">
+            <img src="images/save.png" alt="">
+            <div class="pic">
+                <img id="end" src="" alt="">
+                <!-- 关闭按钮 -->
+                <!-- <div id="close">
+                    <img src="images/close.png" alt="">
+                </div> -->
+            </div>
+            <div class="hint">
+                <img src="images/share.png" alt="">
+            </div>
+        </div>
+        <!-- 第一视觉图片 -->
+        <div class="more" id="more">
+            <!-- 需要渲染的地方1111111111111 -->
+            <!-- <img src="images/surprise1.jpg" alt="" id="pic">
+            <div class="user">
+                <div class="head">
+                    <img src="images/pic.jpg" alt="">
+                </div>
+                <div class="nickname">
+                    <p class="name">你的昵称太长啦啊呀</p>
+                    <p>2018年年运是</p>
+                </div>
+            </div> -->
+            <!-- 需要渲染的地方1111111111111 -->
+        </div>
+        <!-- 图片上的两个按钮 -->
+        <div class="footer">
+            <div class="savebtn" id="savebtn">
+                <img src="images/btn1.png" alt="">
+            </div>
+            <div class="unscramble" id="jump">
+                <img src="images/btn2.png" alt="">
+            </div>
+        </div>
+        <!-- 下层需要保存的图片 -->
+        <div class="more2" id="more2">
+            <!-- 需要渲染的地方2222222 -->
+            <!-- <img src="images/surprise1.jpg" alt="" id="pic">
+            <div class="user">
+                <div class="head">
+                    <img src="images/pic.jpg" alt="">
+                </div>
+                <div class="nickname">
+                    <p>文文</p>
+                    <p>2018年年运是</p>
+                </div>
+            </div> -->
+            <!-- 二维码 -->
+            <!-- <div class="ewm">
+                <img src="images/ewm.png" alt="">
+            </div> -->
+            <!-- 需要渲染的地方2222222 -->
+        </div>
+        <!-- 图片预览区 -->
+        <div id="images" style="width:100%;height:100%;float:left;display:none;">
+
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/artTemplate/template-web.js"></script>
+    <!-- 模板一 -->
+    <script type="text/html" id="tpl1">
+            <img src="images/surprise1.jpg" alt="" id="pic">
+            <div class="user">
+                <div class="head">
+                    <img src="{{data.headImgUrl}}" alt="">
+                </div>
+                <div class="nickname">
+                    <p class="name">{{data.nickName}}</p>
+                    <p>2018年年运是1</p>
+                </div>
+            </div>
+    </script>
+
+    <!-- 模板二-->
+    <script type="text/html" id="tpl2">
+            <img src="images/surprise2.jpg" alt="" id="pic">
+            <div class="user">
+                <div class="nickname">
+                    <p class="name">{{data.nickName}}</p>
+                    <p>2018年年运是2</p>
+                </div>
+            </div>
+    </script>
+
+    <!-- html2canvas将Dom节点在Canvas里边画出来 -->
+    <script src="js/html2canvas.min.js"></script>
+    <!-- 将canvas图片保存成图片 -->
+    <script src="js/canvas2image.js"></script>
+    <script src="js/base64.js"></script>
+    
+    <script src="js/surprise.js"></script>
+</body>
+
+</html>

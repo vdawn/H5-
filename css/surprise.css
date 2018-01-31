@@ -1,0 +1,152 @@
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#box{
+    position: absolute;
+    height:100%;
+    width:100%; 
+    z-index: 99;
+    display: none;
+}
+
+#box img{
+    height:100%;
+    width:100%;
+}
+#box .pic{
+    position: absolute;
+    top:33px;
+    left:10%;
+    width:80%;
+    height:80%;
+    margin:0 auto;
+    border:1px solid #ccc;
+}
+.pic img{
+    width:100%;
+    height:100%;
+}
+.pic #close{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:-8px;
+    left:98%;
+}
+#close img{
+    width:100%;
+    height:100%;
+}
+#box .hint{
+    width:126px;
+    height:25px;
+    position: absolute;
+    top:90%;
+    left:50%;
+    margin-left:-63px;
+}
+.hint img{
+    width:100%;
+    height:100%;
+}
+.more{
+    position: absolute;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.more2{
+    position: absolute;
+    left:0;
+    top:0;
+    display:flex;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    z-index:-98;
+}
+.more>img{
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+.more2>img{
+    height:100%;
+    width:100%;
+    z-index:-99;
+}
+.user{
+    position: absolute;
+    top:15px;
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+.user .head{
+     width:40px;
+     height:40px;
+}
+.user .nickname{
+    height:40px;
+    width:112px;
+}
+.nickname .name{
+    font-size:18px;
+    margin-bottom:2px;
+    
+    width:112px;
+    height:21px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.head img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+.head span{
+    font-size: 18px;
+}
+.important{
+    height:80%;
+    width:100%;
+}
+.important img{
+    height:100%;
+    width:100%;
+}
+.footer{
+    position: absolute;
+    bottom:60px;
+    display:flex;
+    justify-content: space-between;
+    z-index: 90;
+    height:7.5%;
+    width:80%;
+}
+.savebtn,
+.unscramble{
+    height:80%;
+}
+.savebtn img,
+.unscramble img{
+    height:100%;
+    width:80%;
+}
+.ewm{
+    position: absolute;
+    bottom:55px;
+    height:120px;
+    width:260px;
+    margin:0 auto;
+
+}
+.ewm img{
+    height:100%;
+    width:100%;
+    
+}
